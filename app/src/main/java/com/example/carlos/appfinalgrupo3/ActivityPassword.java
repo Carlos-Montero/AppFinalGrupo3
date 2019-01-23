@@ -207,13 +207,12 @@ public class ActivityPassword extends AppCompatActivity {
         }
         //Si no, salta un error
         else {
-            for(int i = 0; i < codigo.length; i++) {
-                codigo[i] = "";
                 Toast error = Toast.makeText(getApplicationContext(),"PIN Error", Toast.LENGTH_SHORT);
                 error.show();
+                codigo=null;
         }
         pin.setText(codigo[i]);
-    }}
+    }
 
 
 }
